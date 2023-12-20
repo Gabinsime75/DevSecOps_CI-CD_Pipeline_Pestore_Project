@@ -8,7 +8,6 @@
 - [Maven](https://maven.apache.org/) Maven will be used for the application packaging and building including running unit test cases
 - [OWASP Dependency Check](https://owasp.org/www-project-dependency-check/) Dependency-Check is a Software Composition Analysis (SCA) tool that attempts to detect publicly disclosed vulnerabilities contained within a project’s dependencies. It does this by determining if there is a Common Platform Enumeration (CPE) identifier for a given dependency. If found, it will generate a report linking to the associated CVE entries.
 - [SonarQube](https://docs.sonarqube.org/) SonarQube Catches bugs and vulnerabilities in your app, with thousands of automated Static Code Analysis rules.
-- [Nexus](https://www.sonatype.com/) Nexus Manage Binaries and build artifacts across your software supply chain
 - [Ansible](https://docs.ansible.com/) Ansible will be used for the application deployment to both lower environments and production
 - [EC2](https://aws.amazon.com/ec2/) EC2 allows users to rent virtual computers (EC2) to run their own workloads and applications.
 - [trivy](https://aquasecurity.github.io/trivy/v0.48/) is a simple and comprehensive vulnerability scanner for containers and other artifacts
