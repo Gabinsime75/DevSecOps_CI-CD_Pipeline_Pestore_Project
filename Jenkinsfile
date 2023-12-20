@@ -3,7 +3,7 @@ pipeline{
     tools {
         jdk 'jdk17'
         maven 'maven3'
-        dependencyCheck 'DP-check'
+
     }
     environment {
         SCANNER_HOME=tool 'sonar-scanner'
