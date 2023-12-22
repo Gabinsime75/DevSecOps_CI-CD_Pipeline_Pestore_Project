@@ -63,7 +63,8 @@ pipeline{
             steps {
                 dir('PETSHOP'){
                   script {
-                         ansiblePlaybook credentialsId: 'ssh', disableHostKeyChecking: true, installation: 'ansible', inventory: '/etc/ansible/', playbook: 'docker-playbook.yaml'
+                         ansiblePlaybook credentialsId: 'ssh', disableHostKeyChecking: true, installation: 'ansible', inventory: '/etc/ansible/', playbook: 'PETSHOP/docker-playbook.yaml'
+
                         }     
                    }    
               }
