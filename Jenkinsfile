@@ -61,9 +61,9 @@ pipeline{
         }
         stage('Install Docker') {
             steps {
-                dir('PETSHOP'){
+                dir('/var/lib/jenkins/workspace/PETSHOP') {
                   script {
-                         ansiblePlaybook credentialsId: 'ssh', disableHostKeyChecking: true, installation: 'ansible', inventory: '/etc/ansible/', playbook: 'PETSHOP/docker-playbook.yaml'
+                         ansiblePlaybook credentialsId: 'ssh', disableHostKeyChecking: true, installation: 'ansible', inventory: '/etc/ansible/', playbook: 'docker-playbook.yaml'
 
                         }     
                    }    
