@@ -61,7 +61,7 @@ pipeline{
         }
         stage('Install Docker') {
             steps {
-                dir('Ansible'){
+                dir('PETSHOP'){
                   script {
                          ansiblePlaybook credentialsId: 'ssh', disableHostKeyChecking: true, installation: 'ansible', inventory: '/etc/ansible/', playbook: 'docker-playbook.yaml'
                         }     
