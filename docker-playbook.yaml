@@ -1,4 +1,4 @@
----
+
 - name: docker build and push
   hosts: JenkinsSonarServer  # Replace with the hostname or IP address of your target server
   become: yes  # Run tasks with sudo privileges
@@ -26,4 +26,4 @@
       command: docker push gabin75/PETSHOP:latest
 
     - name: Run container
-      command: docker run -d --name pet1 -p 8081:8080 gabin75/PETSHOP:lates
+      command: docker run -d --name pet1 -p 8081:8080 gabin75/PETSHOP:latest
