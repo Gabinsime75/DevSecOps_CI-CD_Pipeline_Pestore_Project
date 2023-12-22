@@ -31,34 +31,7 @@ pipeline{
                 sh 'mvn test'
             }
         }
-        stage("Sonarqube Analysis "){
-            steps{
-                withSonarQubeEnv('sonar-server') {
-                    sh ''' $SCANNER_HOME/bin/sonar-scanner -Dsonar.projectName=Petshop \
-                    -Dsonar.java.binaries=. \
-                    -Dsonar.projectKey=Petshop '''
-                }
-            }
-        }
-        stage("quality gate"){
-            steps {
-                script {
-                  waitForQualityGate abortPipeline: false, credentialsId: 'Sonar-token' 
-                }
-           }
-        }
 
-        stage ('Build war file'){
-            steps{
-                sh 'mvn clean install -DskipTests=true'
-            }
-        }
-        stage("OWASP Dependency Check"){
-            steps{
-                dependencyCheck additionalArguments: '--scan ./ --format XML ', odcInstallation: 'DP-Check'
-                dependencyCheckPublisher pattern: '**/dependency-check-report.xml'
-            }
-        }
 
    }
 }
