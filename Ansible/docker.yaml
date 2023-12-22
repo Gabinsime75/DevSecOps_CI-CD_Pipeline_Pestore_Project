@@ -1,3 +1,4 @@
+---
 - name: docker build and push
   hosts: JenkinsSonarServer  # Replace with the hostname or IP address of your target server
   become: yes  # Run tasks with sudo privileges
