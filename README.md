@@ -2,7 +2,7 @@
 ![DevSecOps_CI-CD_Pipeline_Pestore_Project](https://github.com/Gabinsime75/DevSecOps_CI-CD_Pipeline_Pestore_Project/assets/115108532/2184fb3a-f602-4288-b140-af3c40cef146)
 
 ###### Project ToolBox 🧰
-- [Git](https://git-scm.com/) Git will be used to manage our application source code.
+##- [Git](https://git-scm.com/) Git will be used to manage our application source code.
 - [Github](https://github.com/) Github is a free and open source distributed VCS designed to handle everything from small to very large projects with speed and efficiency
 - [Jenkins](https://www.jenkins.io/) Jenkins is an open source automation CI tool which enables developers around the world to reliably build, test, and deploy their software
 - [Maven](https://maven.apache.org/) Maven will be used for the application packaging and building including running unit test cases
